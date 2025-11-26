@@ -8,7 +8,6 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 CORS(app)
 
-
 @app.route("/api/predict/", methods=["POST"])
 def index():
     data = request.json
